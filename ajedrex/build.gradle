@@ -1,5 +1,6 @@
 plugins {
-    id 'com.android.application'
+    // id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
 
@@ -7,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.psiqueylogos_ac.ajedrex"
+        //  applicationId "com.psiqueylogos_ac.ajedrex"
         minSdk 23
         targetSdk 31
         versionCode 1

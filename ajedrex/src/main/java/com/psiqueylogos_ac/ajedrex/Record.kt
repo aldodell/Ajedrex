@@ -10,7 +10,9 @@ annotation class Ignore
 
 interface  Record {
 
-
+    /**
+     * Fill this record object with data from jsonObject
+     */
     fun set(jsonObject: JSONObject) {
         this::class.declaredMemberProperties.forEach {
                 p->
@@ -53,6 +55,9 @@ interface  Record {
     }
 
 
+    /**
+     * Return a JsonObject with data of this record object
+     */
     fun get() : JSONObject {
 
         var obj = JSONObject()
